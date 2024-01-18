@@ -1,0 +1,541 @@
+<!--
+  bl = bloco
+  bx = box
+  ct = container
+  d_fsc = [Display: flex, justify-content: start, align-items: center]
+  d_fc = [Display: flex, align-items: center]
+  d_fss = [Display: flex, justify-content: start, align-items: start]
+  d_fcc = [Display: flex, justify-content: center, align-items: center]
+  column = [flex-direction: column]
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NaHora</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/headerFooter.css">
+  <link rel="stylesheet" href="CSS/MyCss.css">
+  <link rel="stylesheet" href="CSS/responsivo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-XXX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+     <div class="box_logo d_fcc"><a href="#" class="logo">Na<span>Hora</span></a></div>
+     <nav class="navbar"></nav> 
+     <div class="ct-account d_fcc">
+        <a href="#" class="login">Entrar</a>
+        <a href="#" class="cadastro">Cadastrar</a>
+     </div>
+  </header>
+
+
+  <section id="tela_one" class="tela d_fcc">
+    <div class="fundo_principal1">
+
+      <main class="ct_img_animation d_fcc">
+        <div class="slider">
+          <div class="slide-track">
+            <!--7 Slides iniciais-->
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://assets.entrepreneur.com/content/3x2/2000/1596472641-Coca-cola.jpg"></div>
+            <div class="slide d_fc"><img src="https://www.bakels.com.br/wp-content/uploads/sites/33/2020/12/IMG_1035-WEB.png"></div>
+            <div class="slide d_fc"><img src="https://cidadedeniteroi.com/wp-content/uploads/2020/08/Image-1.jpeg"></div>
+            <div class="slide d_fc"><img src="https://hamburguerdesucesso.com.br/wp-content/uploads/2021/05/lanches-para-vender-combos.jpg"></div>
+            <div class="slide d_fc"><img src="https://aguavivalanches.com.br/images/lanches/lanches-em-londrina-xbacon1.jpg"></div>
+            <div class="slide d_fc"><img src="https://4.bp.blogspot.com/-qyjCHGlHtdo/U2dsn-xY6VI/AAAAAAAAABw/2TAgu5b8hV0/s1600/175-x-tudo-hamburger-90g-queijo-presunto-bacon-salada-ovo.png"></div>
+
+            <!--7 Slides apos-->
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide d_fc"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+          </div>
+        </div>
+      </main>
+
+       <main class="ct_esquerda">
+         <div class="bx-name-produto d_fsc"><h2 id="name-product">Hamburguer NewYork</h2></div>
+         <div class="bx-options-produto d_fsc">
+            <p id="options-product">hamburguer, carne, queijo, presunto, alface e molho</p>
+         </div>
+         <div class="bx-score d_fc">
+            <div class="box-ratting d_fsc">
+                <div class="ratting d_fc">
+                    <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                    <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                    <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                    <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                    <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                </div>
+                <div class="caixa-score">
+                    <div class="mini-caixa d_fss bx-score1"><span>1.3</span></div>
+                    <div class="mini-caixa d_fss bx-score2"><span>(676)</span></div>
+                </div>
+            </div>
+         </div>
+         <div class="bx-filters fl-one">
+            <p class="text-bx1">Acompanhamentos:</p>
+            <div class="select-bx2">
+                <button class="btn-opcao">Queijo <span class="btn-opcao-span">R$2</span><div class="icon-x">X</div></button>
+                <button class="btn-opcao">Alface <span class="btn-opcao-span">R$4</span><div class="icon-x">X</div></button>
+                <button class="btn-opcao">Tomate <span class="btn-opcao-span">R$1</span><div class="icon-x">X</div></i></button>
+            </div>
+         </div>
+
+         <div class="espaço-filters"></div>
+
+         <div class="bx-filters fl-two">
+            <p class="text-bx1">Outros sabores:</p>
+            <div class="select-bx2">
+                <button class="btn-opcao">Calabresa<span class="btn-opcao-span">R$20</span><div class="icon-x">X</div></button>
+                <button class="btn-opcao">Midnight<span class="btn-opcao-span">R$15</span><div class="icon-x">X</div></button>
+                <button class="btn-opcao">Empire<span class="btn-opcao-span">R$23</span><div class="icon-x">X</div></button>
+            </div>
+         </div>
+       </main>
+
+       <main class="ct_direita d_fc column">
+          <div class="bx-pagamento d_fcc column">
+              <p class="text-pagar">Preço total R$37,00</p>
+              <button class="btn-pagar">Pedido</button>
+          </div>
+       </main>
+
+       <div class="ct_chao"></div>
+    </div>
+  </section>
+
+  <section id="tela_two" class="tela d_fcc">
+      <div class="fundo_principal2">
+        <div class="ct-topo-pai">
+          <div class="bx-pages-bar">
+            <div class="bl-bar d_fcc">
+              <div class="barra-top"></div>
+            </div>
+            <div class="bl-pages">
+              <span class="titulo-pages">Nossas recomendaçoes</span>
+              <span class="pages">Page 1 - 30</span>
+            </div>
+          </div>
+          <main class="ct_topo">
+              <div class="bx-button-left">
+                <div class="circle-button"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+              </div>
+              <div class="bx-produtos">
+                <div class="slider-produtos">
+                    <div id="bx-product1" class="view-produtos">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product2" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://blog.daazcavernas.com/content/images/2019/05/lanche-do-dia-triplo-cheeseburger.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product3" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/PNG-Sanduiche.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product4" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Dupla-Lanche-PNG.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product5" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://www.pediaki.com.br/imgproduto/cod205/12.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product6" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product7" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product8" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product9" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://blog.daazcavernas.com/content/images/2019/05/lanche-do-dia-triplo-cheeseburger.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product10" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/PNG-Sanduiche.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product11" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Dupla-Lanche-PNG.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product12" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://www.pediaki.com.br/imgproduto/cod205/12.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product13" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product14" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product15" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="bx-button-right">
+                <div class="circle-button"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+              </div>
+          </main>
+          <div class="bx-barra">
+            <div class="barra"></div>
+          </div>
+        </div>
+
+        <div class="ct-baixo-pai">
+          <div class="bx-pages-bar">
+            <div class="bl-pages">
+              <span class="titulo-pages">Melhores avaliaçoes</span>
+              <span class="pages">Page 1 - 30</span>
+            </div>
+          </div>
+          <main class="ct_baixo">
+              <div class="bx-button-left">
+                <div class="circle-button"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+              </div>
+              <div class="bx-produtos">
+                <div class="slider-produtos">
+                    <div id="bx-product1" class="view-produtos">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product2" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://blog.daazcavernas.com/content/images/2019/05/lanche-do-dia-triplo-cheeseburger.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product3" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/PNG-Sanduiche.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product4" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Dupla-Lanche-PNG.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product5" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://www.pediaki.com.br/imgproduto/cod205/12.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product6" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product7" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product8" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product9" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://blog.daazcavernas.com/content/images/2019/05/lanche-do-dia-triplo-cheeseburger.jpg" class="img-food"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product10" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/PNG-Sanduiche.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product11" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Dupla-Lanche-PNG.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product12" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://www.pediaki.com.br/imgproduto/cod205/12.png" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product13" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product14" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bx-product15" class="view-produtos next">
+                      <div class="bl-superior"><img src="https://i.pinimg.com/originals/16/29/c8/1629c8b6460f9613532c7ca6a4fa2f2c.jpg" class="img"></div>
+                      <div class="bl-inferior">
+                        <div class="info-produtos">
+                            <div class="info-titulo">Hamburguer NewYork</div>
+                            <div class="info-destaque d_fcc">
+                              <div class="info-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                              <span>mais vendidos</span></div>
+                            <div class="info-preco">R$32,00</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="bx-button-right">
+                <div class="circle-button"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+              </div>
+          </main>
+          <div class="bx-barra">
+            <div class="barra"></div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="sliderprodutos.js"></script>
+  <script src="/js/handlers/loadBehaviors.js" type="module" params="slider"></script>
+</body>
+</html> 

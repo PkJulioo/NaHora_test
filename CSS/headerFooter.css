@@ -1,0 +1,75 @@
+:root {
+  --gradient-header: linear-gradient(90deg, rgba(3,2,28,1) 0%, rgba(14,14,133,1) 38%, rgba(0,212,255,1) 100%);
+  --gradient-cadastro: linear-gradient(90deg, rgba(200,29,29,1) 0%, rgba(125,63,190,1) 46%, rgba(12,137,161,1) 100%);
+  --white: #fff;
+  --font-model-1: 'Black Ops One';
+  --font-model-2: 'Lucida Sans Unicode';
+}
+
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background: var(--gradient-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.box_logo {
+  min-width: 13%;
+  height: 100%;
+}
+
+
+.logo {
+  color: var(--white);
+  font-weight: 600;
+  animation: slideRight 1s ease forwards;
+  font: normal 2rem var(--font-model-1), cursive;
+	margin: 0;
+  text-decoration: none;
+}
+
+.logo span {
+  font: normal 2rem var(--font-model-1), cursive;
+	margin: 0;
+  color: #d0e701;
+  text-decoration: none;
+}
+
+.ct-account {
+  min-width: 13%;
+  height: 100%;
+  padding: 5px;
+}
+
+.login {
+  padding: 10px 7px 10px 7px;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: var(--font-model-2);
+  color: #000000;
+  text-decoration: none;
+}
+
+.cadastro {
+  padding: 10px 7px 10px 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: var(--font-model-2) ;
+  background: var(--gradient-cadastro);
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.cadastro:hover {
+  color: rgb(255, 197, 6)
+}
